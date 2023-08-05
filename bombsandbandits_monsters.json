@@ -17,15 +17,7 @@
     "aggression": 100,
     "morale": 100,
     "dodge": 0,
-    "armor_bash": 5,
-    "armor_bullet": 5,
-    "armor_cut": 5,
-    "armor_stab": 5,
-    "armor_acid": 5,
-    "armor_fire": 5,
-    "armor_electric": 5,
-    "armor_cold": 5,
-    "armor_pure": 5,
+    "armor": { "bash": 5, "bullet": 5, "cut": 5, "stab": 5, "acid": 5, "cold": 5, "electric": 5, "heat": 5, "biological": 5, "pure": 5 },
     "vision_day": 35,
     "vision_night": 35,
     "luminance": 0,
@@ -128,15 +120,7 @@
     "melee_dice": 1,
     "melee_dice_sides": 5,
     "grab_strength": 1,
-    "armor_bash": 2,
-    "armor_bullet": 2,
-    "armor_cut": 2,
-    "armor_stab": 2,
-    "armor_acid": 2,
-    "armor_fire": 2,
-    "armor_electric": 2,
-    "armor_cold": 2,
-    "armor_pure": 2,
+    "armor": { "bash": 2, "bullet": 2, "cut": 2, "stab": 2, "acid": 2, "cold": 2, "electric": 2, "heat": 2, "biological": 5, "pure": 2 },
     "weakpoint_sets": ["wps_humanoid_body"],
     "families": ["prof_intro_biology", "prof_physiology"],
     "vision_day": 45,
@@ -146,9 +130,6 @@
     "regen_morale": true,
     "flags": [
       "HUMAN",
-      "BONES",
-      "FAT",
-      "LEATHER",
       "PRIORITIZE_TARGETS",
       "GROUP_MORALE",
       "SEES",
@@ -199,15 +180,7 @@
     "melee_dice": 2,
     "dodge": 4,
     "grab_strength": 2,
-    "armor_bash": 5,
-    "armor_bullet": 5,
-    "armor_cut": 5,
-    "armor_stab": 5,
-    "armor_acid": 5,
-    "armor_fire": 5,
-    "armor_electric": 5,
-    "armor_cold": 5,
-    "armor_pure": 5,
+    "armor": { "bash": 5, "bullet": 5, "cut": 5, "stab": 5, "acid": 5, "cold": 5, "electric": 5, "heat": 5, "biological": 5, "pure": 5 },
     "weakpoint_sets": [
       "wps_humanoid_body",
       "wps_humanoid_body_armor",
@@ -272,9 +245,7 @@
         "amount": 4
       }
     ],
-    "armor_bash": 6,
-    "armor_cut": 6,
-    "armor_stab": 6,
+    "armor": { "bash": 6, "cut": 6, "stab": 6 },
     "vision_night": 3,
     "death_drops": "bandits_scrapper",
     "upgrades": {
@@ -283,7 +254,7 @@
     },
     "hp": 95,
     "luminance": 2,
-    "special_attacks": [["GRAB", 6]],
+    "special_attacks": [ { "id": "grab" } ],
     "description": "You can tell by the number of scars this survivor has that they have seen many battles. Best to keep your distance; he seems somewhat eager to get personal.",
     "anger_triggers": [
       "FRIEND_ATTACKED",
@@ -315,10 +286,7 @@
     "speed": 105,
     "melee_dice_sides": 4,
     "dodge": 1,
-    "armor_bash": 3,
-    "armor_cut": 3,
-    "armor_stab": 3,
-    "armor_acid": 1,
+    "armor": { "bash": 3, "cut": 3, "stab": 3, "acid": 1 },
     "death_drops": "bandits_glock",
     "upgrades": {
       "into": "mon_bandits_m1911",
@@ -378,10 +346,7 @@
         "amount": 2
       }
     ],
-    "armor_bash": 6,
-    "armor_cut": 6,
-    "armor_stab": 6,
-    "armor_acid": 3,
+    "armor": { "bash": 6, "cut": 6, "stab": 6, "acid": 3 },
     "death_drops": "bandits_highway",
     "upgrades": {
       "into": "mon_bandits_smg",
@@ -434,8 +399,7 @@
         "PATH_AVOID_DANGER_2",
         "PATH_AVOID_FIRE",
         "DROPS_AMMO",
-        "RANGED_ATTACKER",
-        "CBM_CIV"
+        "RANGED_ATTACKER"
       ]
     }
   },
@@ -447,10 +411,7 @@
     "color": "dark_gray_red",
     "melee_dice_sides": 7,
     "dodge": 5,
-    "armor_bash": 10,
-    "armor_cut": 10,
-    "armor_stab": 10,
-    "armor_acid": 4,
+    "armor": { "bash": 10, "cut": 10, "stab": 10, "acid": 4 },
     "death_drops": "bandits_smg",
     "upgrades": {
       "into": "mon_bandits_alpha",
@@ -498,8 +459,7 @@
         "PATH_AVOID_DANGER_2",
         "PATH_AVOID_FIRE",
         "DROPS_AMMO",
-        "RANGED_ATTACKER",
-        "CBM_CIV"
+        "RANGED_ATTACKER"
       ]
     }
   },
@@ -522,10 +482,7 @@
       }
     ],
     "dodge": 7,
-    "armor_bash": 15,
-    "armor_cut": 15,
-    "armor_stab": 15,
-    "armor_acid": 10,
+    "armor": { "bash": 15, "cut": 15, "stab": 15, "acid": 10 },
     "vision_night": 6,
     "death_drops": "bandits_alpha",
     "hp": 150,
@@ -579,8 +536,7 @@
         "DROPS_AMMO",
         "RANGED_ATTACKER",
         "NIGHT_INVISIBILITY",
-        "STUN_IMMUNE",
-        "CBM_OP"
+        "STUN_IMMUNE"
       ]
     }
   },
@@ -603,10 +559,7 @@
       }
     ],
     "dodge": 4,
-    "armor_bash": 7,
-    "armor_cut": 7,
-    "armor_stab": 7,
-    "armor_acid": 5,
+    "armor": { "bash": 7, "cut": 7, "stab": 7, "acid": 5 },
     "death_drops": "bandits_psycho",
     "upgrades": {
       "into": "mon_bandits_pyro",
@@ -616,7 +569,7 @@
     "special_attacks": [
       ["BIO_OP_TAKEDOWN", 15],
       ["SHRIEK", 20],
-      ["GRAB", 5],
+      { "id": "grab" },
       { "id": "scratch", "min_mul": 0.7, "cooldown": 20 },
       { "type": "bite", "min_mul": 0.8, "cooldown": 20 }
     ],
@@ -665,10 +618,7 @@
       }
     ],
     "dodge": 8,
-    "armor_bash": 10,
-    "armor_cut": 10,
-    "armor_stab": 10,
-    "armor_acid": 8,
+    "armor": { "bash": 10, "cut": 10, "stab": 10, "acid": 8 },
     "special_attacks": [
       {
         "type": "spell",
@@ -709,8 +659,7 @@
         "PATH_AVOID_DANGER_1",
         "PATH_AVOID_FIRE",
         "FIREPROOF",
-        "DRIPS_NAPALM",
-        "CBM_CIV"
+        "DRIPS_NAPALM"
       ]
     }
   },
@@ -732,16 +681,13 @@
       }
     ],
     "dodge": 7,
-    "armor_bash": 14,
-    "armor_cut": 13,
-    "armor_stab": 15,
-    "armor_acid": 9,
+    "armor": { "bash": 14, "cut": 13, "stab": 15, "acid": 9 },
     "vision_night": 5,
     "death_drops": "bandits_super_psycho",
     "hp": 150,
     "special_attacks": [
       ["BIO_OP_TAKEDOWN", 10],
-      ["GRAB", 3]
+      { "id": "grab" }
     ],
     "death_function": {
       "effect": {
@@ -766,8 +712,7 @@
         "RANGED_ATTACKER",
         "FIREPROOF",
         "CAMOUFLAGE",
-        "GRABS",
-        "CBM_SCI"
+        "GRABS"
       ]
     }
   },
@@ -837,10 +782,7 @@
         "amount": 2
       }
     ],
-    "armor_bash": 8,
-    "armor_cut": 8,
-    "armor_stab": 6,
-    "armor_acid": 4,
+    "armor": { "bash": 8, "cut": 8, "stab": 6, "acid": 4 },
     "death_drops": "bandits_shotgun",
     "upgrades": {
       "into": "mon_bandits_raider",
@@ -879,8 +821,7 @@
         "PATH_AVOID_DANGER_2",
         "PATH_AVOID_FIRE",
         "DROPS_AMMO",
-        "RANGED_ATTACKER",
-        "CBM_CIV"
+        "RANGED_ATTACKER"
       ]
     }
   },
@@ -903,10 +844,7 @@
       }
     ],
     "dodge": 3,
-    "armor_bash": 11,
-    "armor_cut": 11,
-    "armor_stab": 8,
-    "armor_acid": 7,
+    "armor": { "bash": 11, "cut": 11, "stab": 8, "acid": 7 },
     "vision_night": 3,
     "death_drops": "bandits_raider",
     "upgrades": {
@@ -915,7 +853,7 @@
     },
     "luminance": 0,
     "special_attacks": [
-      ["GRAB", 5],
+      { "id": "grab" },
       ["PARROT_AT_DANGER", 10],
       {
         "type": "gun",
@@ -961,8 +899,7 @@
         "PATH_AVOID_DANGER_2",
         "PATH_AVOID_FIRE",
         "DROPS_AMMO",
-        "RANGED_ATTACKER",
-        "CBM_POWER"
+        "RANGED_ATTACKER"
       ]
     }
   },
@@ -979,10 +916,7 @@
         "amount": 3
       }
     ],
-    "armor_bash": 12,
-    "armor_cut": 11,
-    "armor_stab": 10,
-    "armor_acid": 9,
+    "armor": { "bash": 12, "cut": 11, "stab": 10, "acid": 9 },
     "death_drops": "bandits_rifle",
     "upgrades": {
       "into": "mon_bandits_super_sniper",
@@ -1037,8 +971,7 @@
         "PATH_AVOID_FIRE",
         "DROPS_AMMO",
         "RANGED_ATTACKER",
-        "NIGHT_INVISIBILITY",
-        "CBM_CIV"
+        "NIGHT_INVISIBILITY"
       ]
     }
   },
@@ -1049,10 +982,7 @@
     "name": { "str": "head hunter" },
     "color": "light_green_green",
     "melee_dice_sides": 5,
-    "armor_bash": 15,
-    "armor_cut": 15,
-    "armor_stab": 15,
-    "armor_acid": 12,
+    "armor": { "bash": 15, "cut": 15, "stab": 15, "acid": 12 },
     "vision_night": 6,
     "death_drops": "bandits_super_rifle",
     "upgrades": {
@@ -1096,8 +1026,7 @@
         "DROPS_AMMO",
         "RANGED_ATTACKER",
         "NIGHT_INVISIBILITY",
-        "CAMOUFLAGE",
-        "CBM_TECH"
+        "CAMOUFLAGE"
       ]
     }
   }

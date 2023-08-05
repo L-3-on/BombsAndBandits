@@ -9,19 +9,19 @@
     "weight": "195000 g",
     "price": 150000,
     "to_hit": -6,
-    "bashing": 22,
+    "melee_damage": { "bash": 22 },
     "material": ["steel"],
     "symbol": "o",
     "color": "dark_gray",
     "explode_in_fire": true,
     "explosion": {
       "power": 8500000,
-      "shrapnel": { "casing_mass": 15000, "fragment_mass": 800 }
+      "shrapnel": { "casing_mass": 25000, "fragment_mass": 800 }
     },
     "use_action": {
       "target": "bandits_high_explosive_bomb_act",
-      "msg": "You activate the timer on the high-explosive bomb. Now clear the area! Instantly!",
-      "target_charges": 60,
+      "msg": "You activate the timer on the high-explosive bomb. Now clear the area! You have 60 seconds!",
+      "target_timer": "60 seconds",
       "active": true,
       "menu_text": "Activate timer",
       "type": "transform"
@@ -38,7 +38,7 @@
     "weight": "195000 g",
     "price": 0,
     "to_hit": -6,
-    "bashing": 22,
+    "melee_damage": { "bash": 22 },
     "material": ["steel"],
     "symbol": "o",
     "color": "dark_gray",
@@ -48,22 +48,31 @@
     "explode_in_fire": true,
     "explosion": {
       "power": 8500000,
-      "shrapnel": { "casing_mass": 15000, "fragment_mass": 800 }
+      "shrapnel": { "casing_mass": 25000, "fragment_mass": 800 }
     },
     "use_action": {
+      "type": "message",
+      "message": "You've already activated the %s - there's no way to deactivate it! Clear this area immediately!"
+    },
+    "tick_action": [
+      {
+        "type": "sound",
+        "sound_message": "Tick.",
+        "sound_volume": 2,
+        "sound_id": "misc"
+      }
+    ],
+    "countdown_action": {
       "type": "explosion",
       "fields_type": "fd_fire",
       "fields_radius": 20,
       "fields_min_intensity": 7,
       "fields_max_intensity": 9,
-      "sound_volume": 2,
-      "sound_msg": "Tick.",
-      "no_deactivate_msg": "You've activated the bomb - but there's no way to deactivate it again! Clear this area immediately!!",
       "explosion": {
         "power": 8500000,
         "distance_factor": 0.8,
         "fire": true,
-        "shrapnel": { "casing_mass": 25000, "fragment_mass": 200 }
+        "shrapnel": { "casing_mass": 25000, "fragment_mass": 800 }
       }
     },
     "flags": ["BOMB", "TRADER_AVOID", "DANGEROUS"]
